@@ -21,11 +21,12 @@ const httpOptions = {
 })
 export class AuthService {
 
-  //private loginUrl = 'http://localhost:8080/api/auth/signin';
-  //private signupUrl = 'http://localhost:8080/api/auth/signup';
+  private loginUrl = 'http://localhost:8080/api/auth/signin';
+ private signupUrl = 'http://localhost:8080/api/auth/signup';
   
- private loginUrl = 'http://localhost:8011/uni-auth-ws/api/auth/signin';
-  private signupUrl = 'http://localhost:8011/uni-auth-ws/api/auth/signup';
+  //below for test to gateway
+ //private loginUrl = 'http://localhost:8011/uni-auth-ws/api/auth/signin';
+ // private signupUrl = 'http://localhost:8011/uni-auth-ws/api/auth/signup';
 
 
   constructor(private http: HttpClient) {
